@@ -20,8 +20,18 @@ public class Candidate {
     @Column(name = "Last_Name", nullable = false, length = 45)
     private String lastName;
 
-    @ManyToOne
-    @JoinColumn(name = "Parties_id", referencedColumnName = "id", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "Parties_id", referencedColumnName = "id")
     private Party party;
 
+    public Candidate(String firstName, String lastName, Party party) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.party = party;
+    }
+
+    public Candidate(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }

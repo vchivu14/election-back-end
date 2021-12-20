@@ -8,7 +8,7 @@ import java.util.List;
 @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
 @Entity
-@Table(name = "parties", schema = "election")
+@Table(name = "parties")
 public class Party {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +21,12 @@ public class Party {
     @OneToMany(mappedBy = "party")
     private List<Candidate> candidates;
 
+    public Party(String name) {
+        this.name = name;
+    }
+
+    public Party(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
