@@ -76,6 +76,12 @@ public class CandidateServiceImp implements CandidateService {
     }
 
     @Override
+    public List<CandidateDTO> getAllCandidatesForParty(Party party) {
+        List<Candidate> candidates = candidateRepo.findAllByParty(party);
+        return getCandidateDTOs(candidates);
+    }
+
+    @Override
     public CandidateDTO addCandidate(InputCandidateDTO inputCandidateDTO) {
         Candidate candidate = new Candidate();
         candidate.setFirstName(inputCandidateDTO.getFirstName());
