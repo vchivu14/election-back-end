@@ -4,7 +4,7 @@
 
 <ul>
  <li> Back-End application </li>
- <li> REST API endpoints for basic operations of an election system  </li> 
+ <li> REST API endpoints for CRUD operations </li> 
  <li> KEA, 3rd semester programming exam </li> 
 </ul>
 
