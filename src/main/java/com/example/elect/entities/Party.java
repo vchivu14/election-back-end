@@ -8,7 +8,7 @@ import java.util.List;
 @Getter @Setter
 @AllArgsConstructor @NoArgsConstructor
 @Entity
-@Table(name = "parties", schema = "f58jmr16udtjclm6")
+@Table(name = "parties")
 public class Party {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
