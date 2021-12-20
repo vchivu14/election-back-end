@@ -10,7 +10,7 @@
 
 ### REST documentation:
 
-...
+https://election-exam.herokuapp.com/swagger-ui/index.html
 
 ## Project Description
 
