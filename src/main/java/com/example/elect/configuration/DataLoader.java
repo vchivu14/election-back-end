@@ -67,6 +67,8 @@ public class DataLoader {
         candidateRepo.save(new Candidate("Jette", "M. Søgaard", p6));
         candidateRepo.save(new Candidate("Søren", "Caspersen", p6));
         candidateRepo.save(new Candidate("Pia", "Birkmand", p6));
+
+        partyRepo.save(new Party(7,"The Others"));
     }
 
 }
