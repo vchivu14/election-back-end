@@ -9,7 +9,6 @@
 </ul>
 
 ### REST documentation:
-
 https://election-exam.herokuapp.com/swagger-ui/index.html
 
 ## Project Description
@@ -27,3 +26,6 @@ In this project we will use:
   <li>Maven</li>
  </ul>
 <hr>
+
+### Front-End:
+https://github.com/vladChivu/election-front-end
