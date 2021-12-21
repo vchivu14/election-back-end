@@ -31,4 +31,14 @@ public class PartyServicesImp implements PartyService {
         }
         return partyDTOS;
     }
+
+    @Override
+    public PartyDTO getPartyById(Integer id) {
+        Party party = partyRepo.getById(id);
+        PartyDTO partyDTO = new PartyDTO();
+        partyDTO.setId(party.getId());
+        partyDTO.setName(party.getName());
+        partyDTO.setCandidateDTOList(candidateService.getAllCandidatesForParty(party));
+        return partyDTO;
+    }
 }
